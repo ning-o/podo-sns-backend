@@ -1,5 +1,5 @@
 <?php
-/* 게시글 상세 정보 가져오기 */
+// 게시글 상세 정보 가져오기
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 

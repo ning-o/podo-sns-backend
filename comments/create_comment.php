@@ -1,5 +1,5 @@
 <?php
-/* 특정 게시글에 대한 댓글 등록 */
+// 특정 게시글에 대한 댓글 등록
 
 // 1. 보안 및 통신 설정
 header("Access-Control-Allow-Origin: *");

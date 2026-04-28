@@ -1,5 +1,5 @@
 <?php
-/* 특정 게시글의 댓글 목록 조회 */
+//특정 게시글의 댓글 목록 조회
 
 // 1. 보안 및 통신 설정
 header("Access-Control-Allow-Origin: *");

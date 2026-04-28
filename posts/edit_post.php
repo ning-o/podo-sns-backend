@@ -1,11 +1,11 @@
 <?php
-/* * 게시글 수정*/
+// 게시글 수정
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json; charset=UTF-8");
 
-// [서버 오류 방지] OPTIONS 요청 시 즉시 종료
+// OPTIONS 요청 시 즉시 종료
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') exit;
 
 // 2. DB 접속 정보
@@ -17,7 +17,7 @@ $dbname = "mbca2025yjh";       //DB이름
 // 3. 연결
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// [서버 오류 방지] 한글 깨짐 방지 설정 추가
+// 한글 깨짐 방지 설정 추가
 $conn->set_charset("utf8mb4");
 
 // 연결 확인
@@ -34,7 +34,7 @@ if(!empty($data->password)){
     $title = $conn->real_escape_string($data->title);
     $content = $conn->real_escape_string($data->content);
 
-    // [전술 핵심] 먼저 비밀번호가 맞는지부터 확인합니다. [cite: 2026-01-27]
+    // 비밀번호가 맞는지부터 확인
     $checkSql = "SELECT id FROM posts WHERE id='$id' AND password='$password'";
     $result = $conn->query($checkSql);
 

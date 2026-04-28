@@ -1,5 +1,5 @@
 <?php
-    // 데이터베이스 조회 함수 : posts 테이블의 모든 데이터 추출
+    // DB 조회 함수 : posts 테이블의 모든 데이터 추출
 
     // 1. 보안/접속 설정 : 리액트(포트 5173)에서 이 PHP로 접근할 수 있게 허용
     header("Access-Control-Allow-Origin: *");
@@ -25,7 +25,7 @@
 
     $posts = [];
 
-    // 4. 결과 가공 : 한 줄씩 배열로
+    // 4. 결과: 한 줄씩 배열로
     if ($result->num_rows >0){
         while($row = $result->fetch_assoc()){
             $posts[] = $row;
