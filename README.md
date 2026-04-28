@@ -15,8 +15,8 @@ https://mbca2025yjh.dothome.co.kr/podo_api/posts/fetch_posts.php
 ## 기술 스택
 - **백엔드:** PHP
 - **데이터베이스:** MySQL
-- **개발 환경:** Apache (XAMPP)
-- **운영 환경:** Dothome Hosting
+- **개발 환경(로컬):** Apache (XAMPP)
+- **운영 환경(배포):** Dothome Hosting
 - **배포 도구:** FileZilla
 
 ## 연결된 프론트엔드
