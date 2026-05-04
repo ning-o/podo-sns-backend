@@ -2,7 +2,7 @@
 React 프론트엔드와 연동하기 위해 구축한 PHP 기반의 백엔드 시스템입니다.
 
 ## Live API Base URL
-Production: https://mbca2025yjh.dothome.co.kr/podo_api
+Production: https://mbca2025yjh.dothome.co.kr/podo_api <br>
 위 링크 접속으로는 403 에러가 뜨는게 정상이며, 아래 상세 엔드포인트를 통해 접근 가능합니다.
 <br>
 ex) 게시글 전체 조회 엔드포인트 <br>
